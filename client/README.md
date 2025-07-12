@@ -1,12 +1,76 @@
+# Employee Directory App (Client)
+
+This is the client-side React application for the Employee Directory. It allows you to view, add, edit, delete, filter, and sort employees in a simple, modern UI.
+
+## Features
+
+- View a list of employees with details (name, email, department, role)
+- Add new employees
+- Edit existing employee details
+- Delete employees
+- Search, filter, and sort employees
+- Responsive design
+
+## Tech Stack
+
+- [React](https://react.dev/)
+- [Vite](https://vitejs.dev/) (for fast development)
+- [React Router](https://reactrouter.com/) (for routing)
+- LocalStorage (for data persistence)
+
+## Getting Started
+
+### Prerequisites
+
+- Node.js (v18 or higher recommended)
+- npm
+
+### Installation
+
+1. Install dependencies:
+
+   ```bash
+   npm install
+   ```
+
+2. Start the development server:
+
+   ```bash
+   npm run dev
+   ```
+
+   The app will be available at [http://localhost:5173](http://localhost:5173) by default.
+
+### Build for Production
+
+```bash
+npm run build
+```
+
+### Linting
+
+```bash
+npm run lint
+```
+
+## Project Structure
+
+- `src/` - Main source code
+  - `components/` - Reusable UI components
+  - `Pages/` - Page-level components
+  - `data/` - Mock employee data
+  - `utils/` - Utility functions (e.g., localStorage helpers)
+- `public/` - Static assets
+- `index.html` - Main HTML entry point
+
+## Customization
+
+- To change the initial employee data, edit `src/data/mockEmployees.js`.
+- All employee data is stored in the browser's LocalStorage.
+
+
 # React + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
